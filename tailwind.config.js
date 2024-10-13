@@ -2,8 +2,11 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        galaxy: "url('/assets/galaxia.jpg')",
+      },
+    },
   },
   plugins: [],
 }
-
