@@ -49,15 +49,20 @@
 
       <!-- HEADER TEXT -->
       <!-- HEADER INFORMACOES -->
-      <div id="header-text" class="flex flex-col justify-center mt-20">
-        <div class="flex items-center flex-col">
+      <div
+        id="header-text"
+        class="flex flex-col sm:items-center justify-center mt-20"
+      >
+        <div class="flex items-center flex-col md:flex-row-reverse">
           <img
-            class="w-64"
+            class="w-64 md:w-80"
             src="./assets/logo/logo-text.png"
             alt="logoDaParteDoTexto"
           />
 
-          <div class="w-full max-w-80">
+          <div
+            class="w-full max-w-80 sm:max-w-full sm:text-center md:text-start"
+          >
             <h1
               class="text-2xl md:text-4xl font-bold font-kdam uppercase text-sky-500 mt-2"
             >
@@ -74,7 +79,7 @@
 
         <!-- HEADER LOCAL -->
         <div
-          class="container mb-16 w-full flex flex-col items-center justify-center"
+          class="container sm:text-center mb-16 flex flex-col items-center justify-center"
         >
           <h2
             class="text-2xl md:text-4xl mt-8 md:mt-20 font-bold text-center text-white uppercase"
@@ -128,7 +133,7 @@
       <!-- SECTION EXPOSICOES -->
       <section
         id="exposicoes"
-        class="w-full flex flex-col justify-center items-center gap-10 bg-galaxy min-h-[50vh] bg-no-repeat bg-cover pt-8 px-4"
+        class="w-full flex flex-col justify-center items-center gap-10 bg-galaxy min-h-[50vh] bg-no-repeat bg-cover pt-8 px-4 md: pb-4"
       >
         <div>
           <p class="text-slate-50 text-lg text-center">
@@ -138,9 +143,12 @@
           </p>
         </div>
 
-        <div id="exposicoes__imgs" class="container w-full">
+        <div
+          id="exposicoes__imgs"
+          class="container w-full md:flex md:flex-row-reverse"
+        >
           <swiper-container
-            class="mySwiper h-full max-w-[420px] bg-slate-100 px-4 py-4 rounded-md"
+            class="mySwiper h-full max-w-[420px] md:max-w-[450px] bg-slate-100 px-4 py-4 md:px-2 md:py-2 rounded-md"
             pagination="true"
             effect="coverflow"
             grab-cursor="true"
@@ -171,11 +179,11 @@
 
           <div>
             <h2
-              class="text-2xl md:text-4xl mt-8 md:mt-20 font-bold text-center text-white uppercase"
+              class="text-2xl md:text-4xl mt-8 md:mt-20 font-bold text-center md:text-start text-white uppercase"
             >
               Muitas Exposições
             </h2>
-            <p class="text-center text-slate-300 mt-2 pb-8">
+            <p class="text-center md:text-start text-slate-300 mt-2 pb-8">
               Aqui vai um texto bem legal e chamativo para despertat a atenção
               do visitante
             </p>
@@ -185,10 +193,10 @@
       <!-- FIM SECTION EXPOSICOES -->
 
       <!-- SECTION LOCAL E MINICURSOS -->
-      <section class="container flex flex-col justify-center items-center pt-8">
-        <div
-          class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap20"
-        >
+      <section
+        class="flex flex-col md:flex-row justify-center items-center pt-8"
+      >
+        <div class="flex flex-col justify-center items-center gap-4">
           <img src="" alt="imagemDoLocal" />
           <div
             class="flex items-center text-center justify-center flex-col gap-2"
@@ -213,17 +221,17 @@
 
         <div
           id="minicursos"
-          class="container mt-16 flex flex-col justify-center items-center pb-16"
+          class="w-full mt-16 flex flex-col justify-center items-center pb-16"
         >
-          <div class="w-11/12 max-w-[1024px] h-auto">
+          <div class="w-11/12 md:w-full max-w-[490px] md:max-w-[520px] h-auto">
             <swiper-container
-              class="mySwiper"
+              class="mySwiper max-w-[640px]"
               pagination="true"
               pagination-dynamic-bullets="true"
             >
               <swiper-slide>
                 <div
-                  class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,1),rgba(0,0,0,0)),url('/assets/mini_curso/fibra_optica.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
+                  class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,0.8),rgba(0,0,0,0)),url('/assets/mini_curso/fibra_optica.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
                 >
                   <div class="text-white flex flex-col px-4 py-4">
                     <h1 class="uppercase text-white text-xl font-bold">
@@ -236,7 +244,7 @@
 
               <swiper-slide>
                 <div
-                  class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,1),rgba(0,0,0,0)),url('/assets/mini_curso/desen_web.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
+                  class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,0.8),rgba(0,0,0,0)),url('/assets/mini_curso/desen_web.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
                 >
                   <div class="text-white flex flex-col px-4 py-4">
                     <h1 class="uppercase text-white text-xl font-bold">
@@ -248,7 +256,7 @@
               </swiper-slide>
               <swiper-slide>
                 <div
-                  class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,1),rgba(0,0,0,0)),url('/assets/mini_curso/prog_python.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
+                  class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,0.8),rgba(0,0,0,0)),url('/assets/mini_curso/prog_python.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
                 >
                   <div class="text-white flex flex-col px-4 py-4">
                     <h1 class="uppercase text-white text-xl font-bold">
@@ -260,7 +268,7 @@
               </swiper-slide>
               <swiper-slide>
                 <div
-                  class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,1),rgba(0,0,0,0)),url('/assets/mini_curso/teste_de_software.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
+                  class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,0.8),rgba(0,0,0,0)),url('/assets/mini_curso/teste_de_software.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
                 >
                   <div class="text-white flex flex-col px-4 py-4">
                     <h1 class="uppercase text-white text-xl font-bold">
@@ -292,7 +300,7 @@
               Oficinas da Feira
             </h2>
             <div
-              class="bg-white w-11/12 px-4 py-4 rounded-md flex flex-col items-center text-center"
+              class="bg-white w-11/12 max-w-[560px] px-4 py-4 rounded-md flex flex-col items-center text-center"
             >
               <p class="text-base">
                 Durante os horários de 9:30 às 17:00 você poderá adqurir
@@ -301,7 +309,7 @@
               </p>
             </div>
           </div>
-          <div class="w-11/12 max-w-[1024px]">
+          <div class="w-11/12 max-w-[510px]">
             <swiper-container
               class="mySwiper bg-slate-100 px-2 py-2 rounded-md"
               pagination="true"
@@ -311,7 +319,9 @@
                 <div
                   class="w-full h-96 bg-[url('/assets/oficinas/cripto.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
                 >
-                  <div class="bg-white w-full border flex flex-col px-4 py-4">
+                  <div
+                    class="bg-slate-100 w-full border flex flex-col px-4 py-4"
+                  >
                     <h1 class="uppercase text-xl font-bold">Criptografia</h1>
                     <p>Andressa Carvalho - UFC/FitBank</p>
                   </div>
@@ -322,7 +332,9 @@
                 <div
                   class="w-full h-96 bg-[url('/assets/oficinas/gestao_de_projetos.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
                 >
-                  <div class="bg-white w-full border flex flex-col px-4 py-4">
+                  <div
+                    class="bg-slate-100 w-full border flex flex-col px-4 py-4"
+                  >
                     <h1 class="uppercase text-xl font-bold">
                       Gestão de Projetos
                     </h1>
@@ -335,7 +347,9 @@
                 <div
                   class="w-full h-96 bg-[url('/assets/oficinas/robotica.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
                 >
-                  <div class="bg-white w-full border flex flex-col px-4 py-4">
+                  <div
+                    class="bg-slate-100 w-full border flex flex-col px-4 py-4"
+                  >
                     <h1 class="uppercase text-xl font-bold">Robótica</h1>
                     <p>Felipe Abreu - UNOPAR</p>
                   </div>
@@ -346,7 +360,9 @@
                 <div
                   class="w-full h-96 bg-[url('/assets/oficinas/teste_software.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
                 >
-                  <div class="bg-white w-full border flex flex-col px-4 py-4">
+                  <div
+                    class="bg-slate-100 w-full border flex flex-col px-4 py-4"
+                  >
                     <h1 class="uppercase text-xl font-bold">
                       Testes de Software
                     </h1>
@@ -359,7 +375,9 @@
                 <div
                   class="w-full h-96 bg-[url('/assets/oficinas/uxui.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
                 >
-                  <div class="bg-white w-full border flex flex-col px-4 py-4">
+                  <div
+                    class="bg-slate-100 w-full border flex flex-col px-4 py-4"
+                  >
                     <h1 class="uppercase text-xl font-bold">UX UI</h1>
                     <p>Raul Pereira - IFCE</p>
                   </div>
@@ -372,7 +390,7 @@
       <!-- FIM SECTION OFICINAS -->
       <section
         id="faq"
-        class="container bg-black flex flex-col items-center justify-center gap-2 px-2 py-2"
+        class="bg-black flex flex-col items-center justify-center gap-2 px-2 py-2"
       >
         <h2 class="text-2xl text-center uppercase text-blue-400 font-bold">
           FAQ - PERGUNTAS FREQUENTES
@@ -381,7 +399,7 @@
         <div class="container w-full px-2 py-2 flex flex-col gap-4">
           <!-- ACCORDION 1 -->
           <div
-            class="accordion bg-blue-500 h-auto px-4 py-4 flex flex-col gap-4 cursor-pointer rounded-sm"
+            class="accordion bg-gradient-to-r from-blue-600 to-cyan-400 h-auto px-4 py-4 flex flex-col gap-4 cursor-pointer rounded-md"
           >
             <div class="flex items-center justify-between">
               <button
@@ -392,7 +410,7 @@
               <i class="fa fa-plus text-white text-xl"></i>
             </div>
             <div class="accordion__content hidden">
-              <p class="bg-white rounded-lg px-2 py-2">
+              <p class="bg-white rounded-sm px-2 py-2">
                 Então, o que é o que é que faz isso faz aquilo mas no fim dá no
                 mesmo
               </p>
@@ -402,7 +420,7 @@
 
           <!-- ACCORDION 2 -->
           <div
-            class="accordion bg-blue-500 h-auto px-4 py-4 flex flex-col gap-4 cursor-pointer rounded-sm"
+            class="accordion bg-gradient-to-r from-blue-600 to-cyan-400 h-auto px-4 py-4 flex flex-col gap-4 cursor-pointer rounded-md"
           >
             <div class="flex items-center justify-between">
               <button
@@ -413,7 +431,7 @@
               <i class="fa fa-plus text-white text-xl"></i>
             </div>
             <div class="accordion__content hidden">
-              <p class="bg-white rounded-lg px-2 py-2">
+              <p class="bg-white rounded-sm px-2 py-2">
                 Então, o que é o que é que faz isso faz aquilo mas no fim dá no
                 mesmo
               </p>
@@ -423,7 +441,7 @@
 
           <!-- ACCORDION 3 -->
           <div
-            class="accordion bg-blue-500 h-auto px-4 py-4 flex flex-col gap-4 cursor-pointer rounded-sm"
+            class="accordion bg-gradient-to-r from-blue-600 to-cyan-400 h-auto px-4 py-4 flex flex-col gap-4 cursor-pointer rounded-md"
           >
             <div class="flex items-center justify-between">
               <button
@@ -434,7 +452,7 @@
               <i class="fa fa-plus text-white text-xl"></i>
             </div>
             <div class="accordion__content hidden">
-              <p class="bg-white rounded-lg px-2 py-2">
+              <p class="bg-white rounded-sm px-2 py-2">
                 Então, o que é o que é que faz isso faz aquilo mas no fim dá no
                 mesmo
               </p>
@@ -444,7 +462,7 @@
 
           <!-- ACCORDION 4 -->
           <div
-            class="accordion bg-blue-500 h-auto px-4 py-4 flex flex-col gap-4 cursor-pointer rounded-sm"
+            class="accordion bg-gradient-to-r from-blue-600 to-cyan-400 h-auto px-4 py-4 flex flex-col gap-4 cursor-pointer rounded-md"
           >
             <div class="flex items-center justify-between">
               <button
@@ -455,7 +473,7 @@
               <i class="fa fa-plus text-white text-xl"></i>
             </div>
             <div class="accordion__content hidden">
-              <p class="bg-white rounded-lg px-2 py-2">
+              <p class="bg-white rounded-sm px-2 py-2">
                 Então, o que é o que é que faz isso faz aquilo mas no fim dá no
                 mesmo
               </p>
