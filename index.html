@@ -10,6 +10,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./js/accordion.js" defer></script>
   </head>
   <body class="h-[100dvh]">
     <header class="bg-galaxy px-4 py-8 md:p-8 w-full">
@@ -359,13 +367,55 @@
       <!-- FIM SECTION OFICINAS -->
       <section
         id="faq"
-        class="bg-black flex flex-col items-center justify-center gap-2"
+        class="container bg-black flex flex-col items-center justify-center gap-2 px-2 py-2"
       >
         <h2 class="text-2xl uppercase text-blue-500">
           FAQ - PERGUNTAS FREQUENTES
         </h2>
 
-        <div></div>
+        <div class="container w-full px-2 py-2 flex flex-col gap-4">
+          <!-- ACCORDION 1 -->
+          <div
+            class="accordion bg-blue-500 h-auto px-4 py-4 flex flex-col gap-4 cursor-pointer rounded-sm"
+          >
+            <div class="flex items-center justify-between">
+              <button
+                class="bg-none text-white border-none text-center text-xl"
+              >
+                O QUE É OQ 1
+              </button>
+              <i class="fa fa-plus text-white text-xl"></i>
+            </div>
+            <div class="accordion__content hidden">
+              <p class="bg-white rounded-lg px-2 py-2">
+                Então, o que é o que é que faz isso faz aquilo mas no fim dá no
+                mesmo
+              </p>
+            </div>
+          </div>
+          <!-- FIM ACCORDION 1 -->
+
+          <!-- ACCORDION 2 -->
+          <div
+            class="accordion bg-blue-500 h-auto px-4 py-4 flex flex-col gap-4 cursor-pointer rounded-sm"
+          >
+            <div class="flex items-center justify-between">
+              <button
+                class="bg-none text-white border-none text-center text-xl"
+              >
+                O QUE É OQ 2
+              </button>
+              <i class="fa fa-plus text-white text-xl"></i>
+            </div>
+            <div class="accordion__content hidden">
+              <p class="bg-white rounded-lg px-2 py-2">
+                Então, o que é o que é que faz isso faz aquilo mas no fim dá no
+                mesmo
+              </p>
+            </div>
+          </div>
+          <!-- FIM ACCORDION 2 -->
+        </div>
       </section>
       <!-- SECTION FAQ -->
     </main>

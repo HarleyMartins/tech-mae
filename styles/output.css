@@ -991,6 +991,10 @@ video {
   transform: none;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .touch-auto {
   touch-action: auto;
 }
@@ -1939,6 +1943,16 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
 .bg-sky-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));
@@ -1952,10 +1966,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[linear-gradient\(to_top\2c rgba\(0\2c 0\2c 0\2c 0\.9\)\2c rgba\(0\2c 0\2c 0\2c 0\)\)\2c url\(\'\/assets\/oficinas\/cripto\.png\'\)\] {
-  background-image: linear-gradient(to top,rgba(0,0,0,0.9),rgba(0,0,0,0)),url('/assets/oficinas/cripto.png');
 }
 
 .bg-\[linear-gradient\(to_top\2c rgba\(0\2c 0\2c 0\2c 1\)\2c rgba\(0\2c 0\2c 0\2c 0\)\)\2c url\(\'\/assets\/mini_curso\/desen_web\.png\'\)\] {
@@ -1974,20 +1984,8 @@ video {
   background-image: linear-gradient(to top,rgba(0,0,0,1),rgba(0,0,0,0)),url('/assets/mini_curso/teste_de_software.png');
 }
 
-.bg-galaxy {
-  background-image: url('/assets/galaxia.jpg');
-}
-
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
 .bg-\[url\(\'\/assets\/oficinas\/cripto\.png\'\)\] {
   background-image: url('/assets/oficinas/cripto.png');
-}
-
-.bg-\[url\(\'\/assets\/oficinas\/gestado_de_projetos\.png\'\)\] {
-  background-image: url('/assets/oficinas/gestado_de_projetos.png');
 }
 
 .bg-\[url\(\'\/assets\/oficinas\/gestao_de_projetos\.png\'\)\] {
@@ -2004,6 +2002,18 @@ video {
 
 .bg-\[url\(\'\/assets\/oficinas\/uxui\.png\'\)\] {
   background-image: url('/assets/oficinas/uxui.png');
+}
+
+.bg-galaxy {
+  background-image: url('/assets/galaxia.jpg');
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-none {
+  background-image: none;
 }
 
 .from-blue-600 {
@@ -2148,6 +2158,11 @@ video {
   padding-right: 0.375rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2163,6 +2178,11 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -2171,26 +2191,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .pb-16 {
