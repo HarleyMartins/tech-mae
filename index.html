@@ -53,7 +53,7 @@
         id="header-text"
         class="flex flex-col sm:items-center justify-center mt-20"
       >
-        <div class="flex items-center flex-col md:flex-row-reverse">
+        <div class="flex items-center flex-col md:gap-40 md:flex-row-reverse">
           <img
             class="w-64 md:w-80"
             src="./assets/logo/logo-text.png"
@@ -64,11 +64,11 @@
             class="w-full max-w-80 sm:max-w-full sm:text-center md:text-start"
           >
             <h1
-              class="text-2xl md:text-4xl font-bold font-kdam uppercase text-sky-500 mt-2"
+              class="text-2xl md:text-4xl font-bold font-kdam uppercase text-sky-500 mt-2 md:max-w-[600px]"
             >
               A melhor feira de Tecnologia de Nova Russas
             </h1>
-            <p class="md:text-xl text-white mt-3">
+            <p class="md:text-xl md:max-w-[600px] text-white mt-3">
               Alto nível de conteúdo e networking para estudantes, profissionais
               e entusiastas em Front-End, Back-End, UX, empreendedorismo,
               carreira, tecnologia e inovação.
@@ -194,12 +194,14 @@
 
       <!-- SECTION LOCAL E MINICURSOS -->
       <section
-        class="flex flex-col md:flex-row justify-center items-center pt-8"
+        class="flex flex-col md:flex-row-reverse md:gap-20 justify-center items-center pt-8"
       >
-        <div class="flex flex-col justify-center items-center gap-4">
+        <div
+          class="flex flex-col justify-center md:justify-end items-center md:items-end gap-4"
+        >
           <img src="" alt="imagemDoLocal" />
           <div
-            class="flex items-center text-center justify-center flex-col gap-2"
+            class="flex items-center md:items-end text-center md:text-end justify-center flex-col gap-2"
           >
             <h2 class="uppercase text-2xl font-bold text-blue-500 mb-4">
               Local do evento
@@ -208,7 +210,9 @@
               E.E.E.P Manuel Abdias Evangelista
             </h3>
 
-            <div class="flex gap-3 flex-col items-center justify-between">
+            <div
+              class="flex gap-3 flex-col items-center md:items-end justify-between"
+            >
               <p>Av. Monsenhor Tabosa, 740 Centro – Fortaleza – CE</p>
               <button
                 class="border px-4 py-1 text-base rounded-md bg-white border-blue-500"
@@ -221,7 +225,7 @@
 
         <div
           id="minicursos"
-          class="w-full mt-16 flex flex-col justify-center items-center pb-16"
+          class="mt-16 flex flex-col justify-center items-center pb-16"
         >
           <div class="w-11/12 md:w-full max-w-[490px] md:max-w-[520px] h-auto">
             <swiper-container
@@ -390,13 +394,15 @@
       <!-- FIM SECTION OFICINAS -->
       <section
         id="faq"
-        class="bg-black flex flex-col items-center justify-center gap-2 px-2 py-2"
+        class="bg-black flex flex-col items-center justify-center gap-6 px-4 py-8"
       >
         <h2 class="text-2xl text-center uppercase text-blue-400 font-bold">
           FAQ - PERGUNTAS FREQUENTES
         </h2>
 
-        <div class="container w-full px-2 py-2 flex flex-col gap-4">
+        <div
+          class="container w-full md:max-w-[1200px] px-2 py-2 flex flex-col gap-4"
+        >
           <!-- ACCORDION 1 -->
           <div
             class="accordion bg-gradient-to-r from-blue-600 to-cyan-400 h-auto px-4 py-4 flex flex-col gap-4 cursor-pointer rounded-md"
@@ -484,6 +490,23 @@
       </section>
       <!-- SECTION FAQ -->
     </main>
+
+    <footer
+      class="w-full bg-zinc-900 flex justify-between px-6 py-6 text-white"
+    >
+      <h2 class="text-base font-medium">
+        © 2024 TechMae. Todos os direitos reservados.
+      </h2>
+      <p>
+        Desenvolvido por
+        <a
+          class="text-sky-200"
+          href="https://instagram.com/devharley_"
+          target="_blank"
+          >Harley Martins</a
+        >
+      </p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
