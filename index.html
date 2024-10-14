@@ -35,7 +35,9 @@
         <!-- FIM HEADER IMG -->
 
         <!-- HEADER NAVBAR -->
-        <nav class="flex items-center gap-4 text-center">
+        <nav
+          class="flex flex-wrap items-center gap-4 text-center justify-center"
+        >
           <a class="text-white text-xl" href="#">Exposições</a>
           <a class="text-white text-xl" href="#">Minicursos</a>
           <a class="text-white text-xl" href="#">Oficinas</a>
@@ -182,13 +184,15 @@
       </section>
       <!-- FIM SECTION EXPOSICOES -->
 
-      <!-- SECTION LOCAL -->
+      <!-- SECTION LOCAL E MINICURSOS -->
       <section class="container flex flex-col justify-center items-center pt-8">
         <div
           class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap20"
         >
           <img src="" alt="imagemDoLocal" />
-          <div class="flex justify-center flex-col gap-2">
+          <div
+            class="flex items-center text-center justify-center flex-col gap-2"
+          >
             <h2 class="uppercase text-2xl font-bold text-blue-500 mb-4">
               Local do evento
             </h2>
@@ -196,7 +200,7 @@
               E.E.E.P Manuel Abdias Evangelista
             </h3>
 
-            <div class="flex gap-3 flex-col items-start justify-between">
+            <div class="flex gap-3 flex-col items-center justify-between">
               <p>Av. Monsenhor Tabosa, 740 Centro – Fortaleza – CE</p>
               <button
                 class="border px-4 py-1 text-base rounded-md bg-white border-blue-500"
@@ -206,73 +210,74 @@
             </div>
           </div>
         </div>
-      </section>
-      <!-- FIM SECTION LOCAL -->
-      <!-- SECTION MINICURSOS -->
-      <section
-        id="minicursos"
-        class="container mt-16 flex flex-col justify-center items-center pb-16"
-      >
-        <div class="w-11/12 max-w-[1024px] h-auto">
-          <swiper-container
-            class="mySwiper"
-            pagination="true"
-            pagination-dynamic-bullets="true"
-          >
-            <swiper-slide>
-              <div
-                class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,1),rgba(0,0,0,0)),url('/assets/mini_curso/fibra_optica.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
-              >
-                <div class="text-white flex flex-col px-4 py-4">
-                  <h1 class="uppercase text-white text-xl font-bold">
-                    minicurso de fibra óptica
-                  </h1>
-                  <p>Ministrado por VexNet</p>
-                </div>
-              </div>
-            </swiper-slide>
 
-            <swiper-slide>
-              <div
-                class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,1),rgba(0,0,0,0)),url('/assets/mini_curso/desen_web.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
-              >
-                <div class="text-white flex flex-col px-4 py-4">
-                  <h1 class="uppercase text-white text-xl font-bold">
-                    Desenvolvimento Web
-                  </h1>
-                  <p>IFCE - Canindé</p>
+        <div
+          id="minicursos"
+          class="container mt-16 flex flex-col justify-center items-center pb-16"
+        >
+          <div class="w-11/12 max-w-[1024px] h-auto">
+            <swiper-container
+              class="mySwiper"
+              pagination="true"
+              pagination-dynamic-bullets="true"
+            >
+              <swiper-slide>
+                <div
+                  class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,1),rgba(0,0,0,0)),url('/assets/mini_curso/fibra_optica.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
+                >
+                  <div class="text-white flex flex-col px-4 py-4">
+                    <h1 class="uppercase text-white text-xl font-bold">
+                      minicurso de fibra óptica
+                    </h1>
+                    <p>Ministrado por VexNet</p>
+                  </div>
                 </div>
-              </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div
-                class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,1),rgba(0,0,0,0)),url('/assets/mini_curso/prog_python.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
-              >
-                <div class="text-white flex flex-col px-4 py-4">
-                  <h1 class="uppercase text-white text-xl font-bold">
-                    Programação em Python
-                  </h1>
-                  <p>UFC - Crateús</p>
+              </swiper-slide>
+
+              <swiper-slide>
+                <div
+                  class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,1),rgba(0,0,0,0)),url('/assets/mini_curso/desen_web.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
+                >
+                  <div class="text-white flex flex-col px-4 py-4">
+                    <h1 class="uppercase text-white text-xl font-bold">
+                      Desenvolvimento Web
+                    </h1>
+                    <p>IFCE - Canindé</p>
+                  </div>
                 </div>
-              </div>
-            </swiper-slide>
-            <swiper-slide>
-              <div
-                class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,1),rgba(0,0,0,0)),url('/assets/mini_curso/teste_de_software.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
-              >
-                <div class="text-white flex flex-col px-4 py-4">
-                  <h1 class="uppercase text-white text-xl font-bold">
-                    minicurso de fibra óptica
-                  </h1>
-                  <p>IFCE - Canindé</p>
+              </swiper-slide>
+              <swiper-slide>
+                <div
+                  class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,1),rgba(0,0,0,0)),url('/assets/mini_curso/prog_python.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
+                >
+                  <div class="text-white flex flex-col px-4 py-4">
+                    <h1 class="uppercase text-white text-xl font-bold">
+                      Programação em Python
+                    </h1>
+                    <p>UFC - Crateús</p>
+                  </div>
                 </div>
-              </div>
-            </swiper-slide>
-          </swiper-container>
+              </swiper-slide>
+              <swiper-slide>
+                <div
+                  class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,1),rgba(0,0,0,0)),url('/assets/mini_curso/teste_de_software.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
+                >
+                  <div class="text-white flex flex-col px-4 py-4">
+                    <h1 class="uppercase text-white text-xl font-bold">
+                      minicurso de fibra óptica
+                    </h1>
+                    <p>IFCE - Canindé</p>
+                  </div>
+                </div>
+              </swiper-slide>
+            </swiper-container>
+          </div>
         </div>
       </section>
+
       <!-- FIM SECTION MINICURSOS -->
 
+      <!-- FIM SECTION LOCAL -->
       <!-- SECTION OFICINAS -->
       <section
         id="oficinas"
@@ -282,12 +287,12 @@
           class="container flex flex-col items-center gap-9 h-auto"
           id="oficinas__container"
         >
-          <div class="text-center pt-8">
+          <div class="flex flex-col items-center text-center pt-8">
             <h2 class="text-white uppercase text-2xl pb-2 font-bold">
               Oficinas da Feira
             </h2>
             <div
-              class="bg-white w-96 px-4 py-4 rounded-md flex flex-col items-center text-center"
+              class="bg-white w-11/12 px-4 py-4 rounded-md flex flex-col items-center text-center"
             >
               <p class="text-base">
                 Durante os horários de 9:30 às 17:00 você poderá adqurir
@@ -296,9 +301,9 @@
               </p>
             </div>
           </div>
-          <div>
+          <div class="w-11/12 max-w-[1024px]">
             <swiper-container
-              class="mySwiper w-96 bg-slate-100 px-2 py-2 rounded-md"
+              class="mySwiper bg-slate-100 px-2 py-2 rounded-md"
               pagination="true"
               pagination-dynamic-bullets="true"
             >
@@ -369,7 +374,7 @@
         id="faq"
         class="container bg-black flex flex-col items-center justify-center gap-2 px-2 py-2"
       >
-        <h2 class="text-2xl uppercase text-blue-500">
+        <h2 class="text-2xl text-center uppercase text-blue-400 font-bold">
           FAQ - PERGUNTAS FREQUENTES
         </h2>
 
@@ -415,6 +420,48 @@
             </div>
           </div>
           <!-- FIM ACCORDION 2 -->
+
+          <!-- ACCORDION 3 -->
+          <div
+            class="accordion bg-blue-500 h-auto px-4 py-4 flex flex-col gap-4 cursor-pointer rounded-sm"
+          >
+            <div class="flex items-center justify-between">
+              <button
+                class="bg-none text-white border-none text-center text-xl"
+              >
+                O QUE É OQ 2
+              </button>
+              <i class="fa fa-plus text-white text-xl"></i>
+            </div>
+            <div class="accordion__content hidden">
+              <p class="bg-white rounded-lg px-2 py-2">
+                Então, o que é o que é que faz isso faz aquilo mas no fim dá no
+                mesmo
+              </p>
+            </div>
+          </div>
+          <!-- FIM ACCORDION 3 -->
+
+          <!-- ACCORDION 4 -->
+          <div
+            class="accordion bg-blue-500 h-auto px-4 py-4 flex flex-col gap-4 cursor-pointer rounded-sm"
+          >
+            <div class="flex items-center justify-between">
+              <button
+                class="bg-none text-white border-none text-center text-xl"
+              >
+                O QUE É OQ 2
+              </button>
+              <i class="fa fa-plus text-white text-xl"></i>
+            </div>
+            <div class="accordion__content hidden">
+              <p class="bg-white rounded-lg px-2 py-2">
+                Então, o que é o que é que faz isso faz aquilo mas no fim dá no
+                mesmo
+              </p>
+            </div>
+          </div>
+          <!-- FIM ACCORDION 4 -->
         </div>
       </section>
       <!-- SECTION FAQ -->
