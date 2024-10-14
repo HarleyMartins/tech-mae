@@ -202,24 +202,165 @@
       <!-- FIM SECTION LOCAL -->
       <!-- SECTION MINICURSOS -->
       <section
-        class="container mt-16 flex flex-col justify-center items-center"
+        id="minicursos"
+        class="container mt-16 flex flex-col justify-center items-center pb-16"
       >
-        <div class="w-11/12">
-          <div
-            class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,1),rgba(0,0,0,0)),url('/assets/mini_curso/fibra_optica.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
+        <div class="w-11/12 max-w-[1024px] h-auto">
+          <swiper-container
+            class="mySwiper"
+            pagination="true"
+            pagination-dynamic-bullets="true"
           >
-            <div class="text-white flex flex-col px-4 py-4">
-              <h1 class="uppercase text-white text-xl font-bold">
-                minicurso de fibra óptica
-              </h1>
-              <p>Ministrado por VexNet</p>
-            </div>
-          </div>
+            <swiper-slide>
+              <div
+                class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,1),rgba(0,0,0,0)),url('/assets/mini_curso/fibra_optica.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
+              >
+                <div class="text-white flex flex-col px-4 py-4">
+                  <h1 class="uppercase text-white text-xl font-bold">
+                    minicurso de fibra óptica
+                  </h1>
+                  <p>Ministrado por VexNet</p>
+                </div>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide>
+              <div
+                class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,1),rgba(0,0,0,0)),url('/assets/mini_curso/desen_web.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
+              >
+                <div class="text-white flex flex-col px-4 py-4">
+                  <h1 class="uppercase text-white text-xl font-bold">
+                    Desenvolvimento Web
+                  </h1>
+                  <p>IFCE - Canindé</p>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div
+                class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,1),rgba(0,0,0,0)),url('/assets/mini_curso/prog_python.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
+              >
+                <div class="text-white flex flex-col px-4 py-4">
+                  <h1 class="uppercase text-white text-xl font-bold">
+                    Programação em Python
+                  </h1>
+                  <p>UFC - Crateús</p>
+                </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div
+                class="w-auto h-96 bg-[linear-gradient(to_top,rgba(0,0,0,1),rgba(0,0,0,0)),url('/assets/mini_curso/teste_de_software.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
+              >
+                <div class="text-white flex flex-col px-4 py-4">
+                  <h1 class="uppercase text-white text-xl font-bold">
+                    minicurso de fibra óptica
+                  </h1>
+                  <p>IFCE - Canindé</p>
+                </div>
+              </div>
+            </swiper-slide>
+          </swiper-container>
         </div>
       </section>
       <!-- FIM SECTION MINICURSOS -->
+
+      <!-- SECTION OFICINAS -->
+      <section
+        id="oficinas"
+        class="bg-gradient-to-r from-blue-600 to-cyan-400 flex flex-col items-center justify-center w-full"
+      >
+        <div
+          class="container flex flex-col items-center gap-9 h-auto"
+          id="oficinas__container"
+        >
+          <div class="text-center pt-8">
+            <h2 class="text-white uppercase text-2xl pb-2 font-bold">
+              Oficinas da Feira
+            </h2>
+            <div
+              class="bg-white w-96 px-4 py-4 rounded-md flex flex-col items-center text-center"
+            >
+              <p class="text-base">
+                Durante os horários de 9:30 às 17:00 você poderá adqurir
+                bastante aprendizado, experiência e muito networking nas nossas
+                oficinas!
+              </p>
+            </div>
+          </div>
+          <div>
+            <swiper-container
+              class="mySwiper w-96 bg-slate-100 px-2 py-2 rounded-md"
+              pagination="true"
+              pagination-dynamic-bullets="true"
+            >
+              <swiper-slide>
+                <div
+                  class="w-full h-96 bg-[url('/assets/oficinas/cripto.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
+                >
+                  <div class="bg-white w-full border flex flex-col px-4 py-4">
+                    <h1 class="uppercase text-xl font-bold">Criptografia</h1>
+                    <p>Andressa Carvalho - UFC/FitBank</p>
+                  </div>
+                </div>
+              </swiper-slide>
+
+              <swiper-slide>
+                <div
+                  class="w-full h-96 bg-[url('/assets/oficinas/gestao_de_projetos.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
+                >
+                  <div class="bg-white w-full border flex flex-col px-4 py-4">
+                    <h1 class="uppercase text-xl font-bold">
+                      Gestão de Projetos
+                    </h1>
+                    <p>Rubens Abraão - IFCE</p>
+                  </div>
+                </div>
+              </swiper-slide>
+
+              <swiper-slide>
+                <div
+                  class="w-full h-96 bg-[url('/assets/oficinas/robotica.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
+                >
+                  <div class="bg-white w-full border flex flex-col px-4 py-4">
+                    <h1 class="uppercase text-xl font-bold">Robótica</h1>
+                    <p>Felipe Abreu - UNOPAR</p>
+                  </div>
+                </div>
+              </swiper-slide>
+
+              <swiper-slide>
+                <div
+                  class="w-full h-96 bg-[url('/assets/oficinas/teste_software.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
+                >
+                  <div class="bg-white w-full border flex flex-col px-4 py-4">
+                    <h1 class="uppercase text-xl font-bold">
+                      Testes de Software
+                    </h1>
+                    <p>Rubens Abraão - IFCE</p>
+                  </div>
+                </div>
+              </swiper-slide>
+
+              <swiper-slide>
+                <div
+                  class="w-full h-96 bg-[url('/assets/oficinas/uxui.png')] bg-no-repeat bg-cover flex flex-col items-start justify-end"
+                >
+                  <div class="bg-white w-full border flex flex-col px-4 py-4">
+                    <h1 class="uppercase text-xl font-bold">UX UI</h1>
+                    <p>Raul Pereira - IFCE</p>
+                  </div>
+                </div>
+              </swiper-slide>
+            </swiper-container>
+          </div>
+        </div>
+      </section>
+      <!-- FIM SECTION OFICINAS -->
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>
