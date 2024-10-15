@@ -64,7 +64,7 @@
     <script src="./js/contadorRegressivo.js" defer></script>
   </head>
   <body class="h-[100dvh]">
-    <header class="bg-galaxy px-4 py-8 md:p-8 w-full">
+    <header class="bg-gradiente bg-no-repeat bg-cover px-4 py-8 md:p-8 w-full">
       <!-- HEADER TOPO -->
       <div class="flex items-center justify-center md:justify-between">
         <!-- HEADER IMG -->
@@ -85,7 +85,7 @@
           <a class="text-white text-xl" href="#exposicoes">Exposições</a>
           <a class="text-white text-xl" href="#minicursos">Minicursos</a>
           <a class="text-white text-xl" href="#oficinas">Oficinas</a>
-          <a class="text-white text-xl" href="#">Galeria</a>
+          <a class="text-white text-xl" href="./galeria.html">Galeria</a>
         </nav>
         <!-- FIM HEADER NAVBAR -->
       </div>
@@ -184,12 +184,21 @@
           </div>
         </div>
       </div>
-      <!-- FIM MAIN -->
+
+      <div
+        id=""
+        class="flex flex-col md:flex-row items-center justify-center gap-8 sm:gap-10 md:gap-14 px-4 py-8"
+      >
+        <img class="w-64 md:w-52" src="./assets/ifce.png" alt="ifce" />
+        <img class="w-64 md:w-52'" src="./assets/UFC.png" alt="ufc" />
+
+        <img class="w-36 md:w-32" src="./assets/logo_ep.png" alt="ufc" />
+      </div>
 
       <!-- SECTION EXPOSICOES -->
       <section
         id="exposicoes"
-        class="w-full flex flex-col justify-center items-center gap-10 bg-galaxy min-h-[50vh] bg-no-repeat bg-cover pt-8 px-4 md: pb-16"
+        class="w-full flex flex-col justify-center items-center gap-10 bg-gradiente min-h-[50vh] bg-no-repeat bg-cover pt-8 px-4 md: pb-16"
       >
         <div>
           <p class="text-slate-50 text-lg text-center md:max-w-[1024px]">
@@ -290,7 +299,7 @@
 
         <div
           id="minicursos__imgs"
-          class="w-11/12 mt-16 flex flex-col justify-center items-center pb-16"
+          class="w-11/12 md:w-4/12 mt-16 flex flex-col justify-center items-center pb-16"
         >
           <div class="w-full md:w-full max-w-[490px] md:max-w-[520px] h-auto">
             <swiper-container

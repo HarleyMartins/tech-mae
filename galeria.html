@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="description" content="Galeria de fotos do evento TechMae" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="keywords"
+      content="Galeria, Fotos, Evento, Tech, Tecnologia, Feira, Programação"
+    />
+    <!-- META TAGS OG -->
+    <!-- Título da página -->
+    <meta property="og:title" content="Galeiras TechMAE 2024 - Nova Russas" />
+
+    <!-- Descrição da página -->
+    <meta
+      property="og:description"
+      content="Galeria de fotos do evento TechMae"
+    />
+
+    <!-- URL canônica da página -->
+    <!-- <meta property="og:url" content="https://www.seusite.com/pagina" /> -->
+
+    <!-- Tipo de conteúdo: website, article, etc. -->
+    <meta property="og:type" content="website" />
+    <!-- Use "article" se for um post de blog ou artigo -->
+
+    <!-- Imagem de visualização -->
+    <!-- <meta property="og:image" content="https://www.seusite.com/imagem.jpg" /> -->
+
+    <!-- Largura e altura da imagem para garantir o tamanho correto -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Nome do site ou marca -->
+    <meta property="og:site_name" content="TechMAE 2024 - Nova Russas" />
+    <title>TechMAE 2024 - Nova Russas</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/logo/logo.png"
+      type="image/x-icon"
+    />
+    <title>Galeria Estilo Unsplash</title>
+    <link rel="stylesheet" href="./styles/output.css" />
+
+    <style>
+      /* Ajuste adicional para simular o estilo Masonry */
+      .masonry-grid {
+        column-count: 3; /* Número de colunas */
+        column-gap: 1rem; /* Espaço entre as colunas */
+      }
+
+      .masonry-grid-item {
+        margin-bottom: 1rem;
+        break-inside: avoid; /* Impede que o conteúdo seja quebrado entre as colunas */
+      }
+
+      /* Estilos responsivos */
+      @media (max-width: 1024px) {
+        .masonry-grid {
+          column-count: 2;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .masonry-grid {
+          column-count: 1;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Cabeçalho -->
+    <header class="bg-blue-700 shadow-md py-6">
+      <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold text-white pb-2">Galeria</h1>
+        <a href="../" class="text-black text-base bg-white py-1 px-8 rounded-lg"
+          >Voltar</a
+        >
+      </div>
+    </header>
+
+    <!-- Grade de Galeria estilo Masonry -->
+    <main class="container mx-auto py-12 px-4">
+      <div class="masonry-grid">
+        <!-- Exemplo de imagens (altere os links para imagens reais com o PHP: KAIK E ARTHUR) -->
+        <div class="masonry-grid-item group">
+          <img
+            class="w-full h-auto object-cover rounded-lg shadow-md transition-transform duration-300 ease-in-out transform group-hover:scale-105"
+            src="./assets/banner/banner_body.jpg"
+            alt="Imagem 1"
+          />
+        </div>
+        <div class="masonry-grid-item group">
+          <img
+            class="w-full h-auto object-cover rounded-lg shadow-md transition-transform duration-300 ease-in-out transform group-hover:scale-105"
+            src="./assets/exposicoes/1.png"
+            alt="Imagem 2"
+          />
+        </div>
+        <div class="masonry-grid-item group">
+          <img
+            class="w-full h-auto object-cover rounded-lg shadow-md transition-transform duration-300 ease-in-out transform group-hover:scale-105"
+            src="./assets/imagensGaleria/imgHorizontal.jpg"
+            alt="Imagem 3"
+          />
+        </div>
+        <div class="masonry-grid-item group">
+          <img
+            class="w-full h-auto object-cover rounded-lg shadow-md transition-transform duration-300 ease-in-out transform group-hover:scale-105"
+            src="./assets/imagensGaleria/imgVertical.jpg"
+            alt="Imagem 4"
+          />
+        </div>
+        <div class="masonry-grid-item group">
+          <img
+            class="w-full h-auto object-cover rounded-lg shadow-md transition-transform duration-300 ease-in-out transform group-hover:scale-105"
+            src="./assets/logo/logo.png"
+            alt="Imagem 5"
+          />
+        </div>
+        <div class="masonry-grid-item group">
+          <img
+            class="w-full h-auto object-cover rounded-lg shadow-md transition-transform duration-300 ease-in-out transform group-hover:scale-105"
+            src="./assets/logo/logo-text.png"
+            alt="Imagem 6"
+          />
+        </div>
+        <div class="masonry-grid-item group">
+          <img
+            class="w-full h-auto object-cover rounded-lg shadow-md transition-transform duration-300 ease-in-out transform group-hover:scale-105"
+            src="./assets/mini_curso/teste_de_software.png"
+            alt="Imagem 7"
+          />
+        </div>
+        <div class="masonry-grid-item group">
+          <img
+            class="w-full h-auto object-cover rounded-lg shadow-md transition-transform duration-300 ease-in-out transform group-hover:scale-105"
+            src="./assets/oficinas/cripto.png"
+            alt="Imagem 8"
+          />
+        </div>
+
+        <!-- Adicione mais imagens conforme necessário -->
+      </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-white shadow-inner py-6 mt-12">
+      <div class="container mx-auto text-center text-gray-600">
+        <p>&copy; 2024 TechMae | Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

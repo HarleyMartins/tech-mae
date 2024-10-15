@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         galaxy: "url('/assets/galaxia.jpg')",
+        gradiente: "url('/assets/bg.png')",
       },
     },
   },
