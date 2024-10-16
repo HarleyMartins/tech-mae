@@ -65,6 +65,7 @@
     />
     <script src="./js/accordion.js" defer></script>
     <script src="./js/contadorRegressivo.js" defer></script>
+    <script src="./js/getLocation.js" defer></script>
   </head>
   <body class="h-[100dvh]">
     <header class="bg-gradiente bg-no-repeat bg-cover px-4 py-8 md:p-8 w-full">
@@ -134,8 +135,8 @@
             18 DE OUTUBRO | Nova Russas
           </h2>
           <p class="text-center text-slate-300 mt-4">
-            08h às 17h | E.E.E.P Manuel Abdias Evangelista, Rua tal tal tal,
-            bairro tal tal tal
+            08h às 17h | E.E.E.P Manuel Abdias Evangelista, Rua Davi José
+            Carvalho, 231
           </p>
         </div>
         <!-- FIM HEADER LOCAL -->
@@ -290,9 +291,10 @@
             <div
               class="flex gap-3 flex-col items-center md:items-end justify-between"
             >
-              <p>Av. Monsenhor Tabosa, 740 Centro – Fortaleza – CE</p>
+              <p>Rua Davi José Carvalho, 231 – Nova Russas – CE</p>
               <button
                 class="border px-4 py-1 text-base rounded-md bg-white border-blue-500 md:text-lg hover:bg-blue-500 hover:text-white w-44 hover:w-52 transition-all duration-500 ease-out"
+                onclick="getLocation()"
               >
                 Como chegar
               </button>
@@ -591,3 +593,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>
+
+<!-- se você chegou até aqui e está lendo isso, saiba que você é um curioso. Mas que bom que você sabe inspecionar páginas no navegador. Aproveita que já tá aqui, segue o @devharley_ <-(Você pode aprender programação com esse cara) e o @eu.oarthurr  -->
