@@ -1,3 +1,13 @@
+<?php
+require_once './db_connect.php';
+
+$result = $conn->query("SELECT * FROM photos") or die("Impossível executar a query");
+
+// while ($row = mysqli_fetch_assoc($result)) {
+//     $line = $row['id'];
+// 	  echo "<img src='getImagem.php?PicNum=$line' \>";
+// }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -89,13 +99,26 @@
     <main class="container mx-auto py-12 px-4">
       <div class="masonry-grid">
         <!-- Exemplo de imagens (altere os links para imagens reais com o PHP: KAIK E ARTHUR) -->
-        <div class="masonry-grid-item group">
+        
+        <?php
+            while ($row = mysqli_fetch_assoc($result)) {
+                $line = $row['id'];
+                echo "<img
+                  class='w-full h-auto object-cover rounded-lg shadow-md transition-transform duration-300 ease-in-out transform group-hover:scale-105'
+                  src='getImagem.php?PicNum=$line'
+                  alt='Imagem' />
+                ";
+            }
+        ?>
+        
+        <!-- <div class="masonry-grid-item group">
           <img
             class="w-full h-auto object-cover rounded-lg shadow-md transition-transform duration-300 ease-in-out transform group-hover:scale-105"
             src="./assets/banner/banner_body.jpg"
             alt="Imagem 1"
           />
         </div>
+        
         <div class="masonry-grid-item group">
           <img
             class="w-full h-auto object-cover rounded-lg shadow-md transition-transform duration-300 ease-in-out transform group-hover:scale-105"
@@ -144,7 +167,7 @@
             src="./assets/oficinas/cripto.png"
             alt="Imagem 8"
           />
-        </div>
+        </div> -->
 
         <!-- Adicione mais imagens conforme necessário -->
       </div>
