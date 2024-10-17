@@ -1,7 +1,3 @@
 {
-  "recommendations": [
-    "esbenp.prettier-vscode",
-    "rocketseat.theme-omni",
-    "ritwickdey.LiveServer"
-  ]
+  "recommendations": ["esbenp.prettier-vscode", "rocketseat.theme-omni"]
 }
