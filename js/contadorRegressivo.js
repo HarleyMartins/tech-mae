@@ -4,7 +4,7 @@ function addLeadingZero(number) {
 }
 
 // Data de destino para a contagem regressiva
-const countdownDate = new Date("Oct 18, 2024 23:59:59").getTime()
+const countdownDate = new Date("Oct 18, 2024 08:00:00").getTime()
 
 // Atualiza o contador a cada segundo
 const countdownFunction = setInterval(() => {
@@ -28,6 +28,8 @@ const countdownFunction = setInterval(() => {
   // Quando a contagem terminar
   if (distance < 0) {
     clearInterval(countdownFunction)
-    document.querySelector(".countdown").textContent = "Tempo esgotado!"
+    document.querySelector(
+      ".countdown"
+    ).innerHTML = `<p class="text-center text-2xl font-bold uppercase">O evento começou!!</p>`
   }
 }, 1000)
